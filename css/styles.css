@@ -8,16 +8,18 @@
   padding-bottom: 10px;
   font-size: 18px;
   font-style: italic;
+  color: white;
 }
 #head {
   text-align: center;
   font-size: 48px;
   font-family: monospace;
   font-weight: bold;
+  color: white;
 }
 .header {
   border: 5px solid black;
-  background-color: lightblue;
+  background-color: grey;
 }
 .container {
   width: 85%;
@@ -31,7 +33,7 @@ text-align: center;
 font-size: 18px;
 font-weight: bold;
 }
-form{
+form {
   background-color: white;
   padding: 25px;
   border: 5px solid black;
