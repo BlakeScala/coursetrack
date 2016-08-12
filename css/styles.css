@@ -1,15 +1,19 @@
-.results {
+#phpdiv, #cssdiv, #javadiv {
   display: none;
+  margin-top: 45px;
 }
 #subhead {
   margin-top: 15px;
   text-align: center;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  font-style: italic;
 }
 #head {
   text-align: center;
-  font-size:
+  font-size: 48px;
+  font-family: monospace;
+  font-weight: bold;
 }
 .header {
   border: 5px solid black;
@@ -54,6 +58,7 @@ img {
   width: 75%;
   margin: auto;
   display: block;
+  margin-bottom: 50px;
 }
 .results {
   margin-top: 45px;
@@ -64,4 +69,12 @@ img {
 }
 .resulttext {
   padding: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+.happycoding {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: darkblue;
 }

@@ -16,7 +16,7 @@
       <form id="quiz">
         <div id="nameenter" class="form-group">
           <label for="name">Enter your name</label>
-          <input id="name" class="form-control" type="text">
+          <input id="name" class="form-control" type="text" required>
         </div>
         <p class="quizquestion">
           What types of programs sound most appealing to build?
@@ -56,40 +56,37 @@
         </select>
         <button class="btn btn-primary center-block" type="submit" name="button">Submit</button>
       </form>
-
-      <!-- These are hidden classes -->
-      <div class="results">
-        <div id="phpdiv">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/php.png" alt="php" />
-            </div>
-            <div class="col-md-6 resulttext">
-              <h1>You should take PHP/Drupal!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+      <!-- Hidden Result Classes -->
+      <div id="phpdiv">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/php.png" alt="php" />
+          </div>
+          <div class="col-md-6 resulttext">
+            <h1>You should take PHP/Drupal!</h1>
+            <p> <strong><span id="studentname"></span></strong>, it looks like you would fit best into the PHP/Drupal course track! Check out the <a href="http://www.epicodus.com/php">PHP</a> and <a href="http://www.epicodus.com/drupal">Drupal</a> course overviews. <br><span class="happycoding">Happy coding!</span></p>
           </div>
         </div>
-        <div id="javadiv">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/java.png" alt="java" />
-            </div>
-            <div class="col-md-6 resulttext">
-              <h1>You should take Java/Android!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+      </div>
+      <div id="javadiv">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/java.png" alt="java" />
+          </div>
+          <div class="col-md-6 resulttext">
+            <h1>You should take Java/Android!</h1>
+            <p> <strong><span id="studentname"></span></strong>, it looks like you would fit best into the Java/Android course track! Check out the <a href="http://www.epicodus.com/java">Java</a> and <a href="http://www.epicodus.com/android">Android</a> course overviews. <br><span class="happycoding">Happy coding!</span></p>
           </div>
         </div>
-        <div id="cssdiv">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/css.png" alt="css" />
-            </div>
-            <div class="col-md-6 resulttext">
-              <h1>You should take CSS/Design!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+      </div>
+      <div id="cssdiv">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/css.png" alt="css" />
+          </div>
+          <div class="col-md-6 resulttext">
+            <h1>You should take CSS/Design!</h1>
+            <p> <strong><span id="studentname"></span></strong>, it looks like you would fit best into the CSS/Design course track! Check out the <a href="http://www.epicodus.com/design">Design</a> and <a href="http://www.epicodus.com/css">CSS</a> course overviews. <br><span class="happycoding">Happy coding!</span></p>
           </div>
         </div>
       </div>

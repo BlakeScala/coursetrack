@@ -7,6 +7,9 @@ $(document).ready(function() {
     var Java = 0;
 
     var answer1 = $("#mc1").val();
+    var nameInput = $("input#name").val();
+
+    $("span#studentname").text(nameInput);
 
     if (answer1 === "1") {
       $(PHP += 1);
@@ -50,25 +53,27 @@ $(document).ready(function() {
     var answer5 = $("#mc5").val();
 
     if (answer5 === "1") {
-      $(Java += 1);
-      $(PHP += 1);
+      $(Java += 3);
+      $(PHP += 3);
     }
     else if (answer5 ==="2") {
       $(CSS += 3);
     }
-
-    alert(PHP)
-    alert(Java)
-    alert(CSS)
     
     if (PHP > CSS && PHP > Java) {
       $("#phpdiv").show();
+      $("#cssdiv").hide();
+      $("#javadiv").hide();
     }
     else if (CSS > PHP && CSS > Java) {
       $("#cssdiv").show();
+      $("#phpdiv").hide();
+      $("#javadiv").hide();
     }
     else if (Java > PHP && Java > CSS) {
       $("#javadiv").show();
+      $("#phpdiv").hide();
+      $("#cssdiv").hide();
     }
   });
 });
